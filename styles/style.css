@@ -74,6 +74,7 @@
 .aligned-text_center,
 .aligned-text_right {
   display: block;
+  padding-bottom: 10px;
 }
 
 .aligned-text {
@@ -111,7 +112,7 @@
   font-weight: 400;
   font-size: 22px;
   text-transform: uppercase;
-  word-spacing: 15px;
+  word-spacing: 18px;
 }
 
 .bet-button {
