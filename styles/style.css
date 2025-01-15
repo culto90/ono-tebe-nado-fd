@@ -1,7 +1,6 @@
 .header {
   display: grid;
-  grid-template-columns: 1fr min-content 1fr;
-  justify-items: center;
+  grid-template-columns: 1fr auto 1fr;
   align-items: center;
   padding:  95px 50px;
   font-weight: 400;
@@ -45,6 +44,7 @@
 .address {
   max-width: 240px;
   font-style: normal;
+  justify-self: end;
 }
 
 .overlay {
