@@ -258,6 +258,10 @@
   padding-bottom: 82px;
 }
 
+.footer address {
+  justify-self: start;
+}
+
 .footer__menu {
   display: flex;
   justify-content: center;
