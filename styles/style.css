@@ -30,6 +30,10 @@
   list-style-type: none;
 }
 
+.header__links-list-item-link_active {
+  text-decoration: none;
+}
+
 .header__links-list-item_no-decoration {
   text-decoration: none;
 }
@@ -44,6 +48,7 @@
   max-width: 240px;
   font-style: normal;
   justify-self: end;
+  line-height: 24px;
 }
 
 .overlay {
@@ -68,13 +73,14 @@
   font-weight: 700;
   font-size: 100px;
   text-transform: uppercase;
+
 }
 
 .aligned-text,
 .aligned-text_center,
 .aligned-text_right {
-  display: block;
-  padding-bottom: 15px
+  display: flex;
+  padding-bottom: 18px;
 }
 
 .aligned-text {
@@ -82,12 +88,13 @@
 }
 
 .aligned-text_center {
-  text-align: center;
+  justify-content: center;
 }
 
 .aligned-text_right {
-  text-align: right;
-  margin-left: auto;
+  justify-content: end;
+  margin-right: -30px;
+  padding-bottom: 15px;
 }
 
 .letter-spacing-extended {
@@ -117,6 +124,7 @@
 
 .bet-button {
   border-color: #FFFFFF;
+  border: 1px solid #fff;
   padding: 12px 32px;
   color: #FFFFFF;
   font-weight: 500;
@@ -140,6 +148,7 @@
 
 .lots__card-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 25px;
   list-style-type: none;
 }
@@ -147,9 +156,10 @@
 .card {
   position: relative;
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
-  min-width: 334px;
-  min-height: 560px;
+  width: 334px;
+  min-height: 596px;
   background-position: center center;
   background-size: cover;
 }
@@ -174,7 +184,6 @@
 
 .card__text {
   width: 100%;
-  margin-top: auto;
   padding-right: 40px;
   padding-bottom: 48px;
   padding-left: 40px;
@@ -207,7 +216,7 @@
 .about {
   display: grid;
   justify-items: center;
-  padding-top: 185px;
+  padding-top: 155px;
   padding-left: 24px;
   padding-right: 24px;
   column-gap: 25px;
@@ -242,17 +251,13 @@
   color: #000000;
   font-weight: 400;
   font-size: 20px;
-}
-
-.about__text-with-padding {
   padding-bottom: 24px;
 }
 
 .footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  align-items: center;
-  padding-top: 180px;
+  padding-top: 165px;
   padding-left: 50px;
   padding-right: 50px;
   padding-bottom: 82px;
