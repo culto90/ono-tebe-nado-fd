@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "test": "echo 'Hello!'",
+    "check": "prettier --check './**/*.{html,css,js}'",
+    "format": "prettier --write './**/*.{html,css,js}'",
+    "lint": "stylelint \"styles/**/*.css\"",
+    "lintfix": "stylelint \"styles/**/*.css\" --fix"
+  },
+  "dependencies": {
+    "prettier": "^3.5.0",
+    "stylelint": "^16.14.1"
+  }
+}
